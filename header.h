@@ -3,7 +3,6 @@
 
 #include <stdbool.h>
 
-// ── Type definitions ──────────────────────────────────────────────────────────
 
 typedef struct {
     int a; // row    (1..3, i.e. C)
@@ -30,14 +29,12 @@ typedef struct {
     PosSet T;      // expanded set
 } GameState;
 
-// ── Set helpers ───────────────────────────────────────────────────────────────
 
 int  inSet        (PosSet set, Pos pos);
 void addToSet     (PosSet *set, Pos pos);
 void removeFromSet(PosSet *set, Pos pos);
 int  inM          (Pos pos);
 
-// ── Game functions ────────────────────────────────────────────────────────────
 
 void  initGame      (GameState *gs);
 void  updateOver    (GameState *gs);

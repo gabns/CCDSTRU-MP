@@ -9,7 +9,7 @@ int main(void) {
     Pos p;
 
     while (!gs.over) {
-        displayBoard(&gs); // <-- Show the grid at the start of every turn
+        displayBoard(&gs); //Show the grid at the start of every turn
 
         printf("\nCurrent Turn: %s\n", gs.go ? "R" : "B");
         
